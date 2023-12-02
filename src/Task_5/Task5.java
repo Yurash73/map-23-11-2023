@@ -1,0 +1,26 @@
+package Task_5;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Task5 {
+    public static void main(String[] args) {
+
+        Map<String, Object> map = new HashMap<>();
+        map.put("Sim", 5);
+        map.put("Tom", 5.5);
+        map.put("Arbus", false);
+        map.put("Baby", null);
+        map.put("Cat", "Cat");
+        map.put("Eat", new Long(56));
+        map.put("Food", new Character('3'));
+        map.put("Gevey", '6');
+        map.put("Hugs", 111111111111L);
+        map.put("Comp", (double) 123);
+
+        System.out.println("Выводим содержимое коллекции: ");
+
+        map.forEach((k, v) -> System.out.println(k + " - " + v));
+
+    }
+}
